@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.io.OutputStream; 
 import java.io.IOException; 
 
-public class vsPDE extends PApplet {
+public class main extends PApplet {
 
 class Particle {
   PVector location;
@@ -88,7 +88,7 @@ public void draw() {
 }
   public void settings() {  size(512, 512); }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "vsPDE" };
+    String[] appletArgs = new String[] { "main" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {
